@@ -16,7 +16,8 @@ for i=1:size(data,3);
     iptg_now=iptg;
     f=find(isnan(do_now(1,:)));
     if ~isempty(f)
-        do_now(:,f(1))=[];Model_data_only_2021_01_15
+        do_now(:,f(1))=[];
+        Model_data_only_2021_01_15
         iptg_now(f(1))=[];
     end
     plot(iptg_now,do_now);
